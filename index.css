@@ -1,0 +1,154 @@
+* {
+    --background-color-primary: #101010;
+    --background-color-secondary: #232323;
+    --background-color-tertiary: #4d4d4d;
+    --text-color-light: #ffffff;
+    --text-color-regular: #c7c7c7;
+    --text-color-dark: #606060;
+
+}
+
+html { scroll-behavior: smooth; }
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url(res/fonts/jetbrains_mono_regular.ttf);
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(res/fonts/lato.ttf);
+}
+
+@font-face {
+    font-family: "Satisfy";
+    src: url(res/fonts/satisfy_regular.ttf);
+}
+
+
+body {
+    margin: 0;
+    background-color: var(--background-color-primary);
+    color: var(--text-color-regular);
+}
+
+.banner {
+    height: 40%;
+
+    background-image: url(res/images/green_night_valley.jpg);
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.banner .avatar img {
+    height: 20vw;
+    max-height: 10rem;
+
+    margin-bottom: 1rem;
+
+    border: 0.3rem solid var(--background-color-tertiary);
+    border-radius: 100%;
+}
+
+.content-section-1 {
+    text-align: center;
+
+    height: 100vh;
+}
+
+.name-main {
+    padding-top: 1rem;
+
+    color: var(--text-color-light);
+    font-family: "Lato";
+    font-size: 2rem;
+}
+
+.name-alternate {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 1rem;
+
+    font-family: "JetBrains Mono";
+    font-size: 1.1rem;
+    align-content: center;
+
+    width: fit-content;
+    padding: 1rem 7vw;
+    border: 0.3rem solid var(--background-color-tertiary);
+    border-radius: 1rem;
+
+    background-color: var(--background-color-secondary);
+}
+
+.name-alternate b {
+    color: var(--text-color-dark);
+    font-family: "Roboto";
+    font-size: 0.75rem;
+}
+
+.quote {
+    margin-top: 1.5rem;
+
+    font-size: 2rem;
+    font-family: "Satisfy";
+}
+
+.scroll svg {
+    height: 3.4rem;
+    stroke: currentColor;
+    fill: var(--text-color-regular);
+}
+
+.scroll {
+    margin: auto;
+    margin-top: 1.5rem;
+	width: 3rem;
+	height: 3rem;
+	border: 0.2rem solid var(--text-color-dark);
+	border-radius: 100%;
+	position: relative;
+	animation: down 2s infinite;
+}
+
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+.content-section-2 {
+    height: 100vh;
+
+    background-color: var(--background-color-secondary);
+}
+
+.hosted-with-love {
+    height: 2rem;
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2rem;
+
+    font-family: 'Consolas';
+}
+
+/* TODO */
+.coming-soon {
+    color: var(--text-color-dark);
+    font-family: "Roboto";
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 45vh;
+}
