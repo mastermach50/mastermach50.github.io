@@ -12,7 +12,7 @@ html { scroll-behavior: smooth; }
 
 @font-face {
     font-family: "JetBrains Mono";
-    src: url(res/fonts/jetbrains_mono_regular.ttf);
+    src: url(res/fonts/jetbrains_mono_regular.woff2);
 }
 
 @font-face {
