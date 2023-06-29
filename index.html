@@ -8,52 +8,96 @@
     <meta charset="utf-8">
 </head>
 <body>
-    <div class="content-section-1">
+    <div class="content">
+        <div class="content-container content-container-1">
 
-        <div class="banner">
-            <div class="avatar">
-                <img src="res/images/avatar.png" alt="Avatar">
+            <div class="banner">
+                <div class="avatar">
+                    <img src="res/images/avatar.png" alt="Avatar">
+                </div>
             </div>
+
+            <div class="name-main">
+                Mathew
+            </div>
+
+            <div class="name-alternate">
+                <b>AKA</b><br>
+                Mach50<br>
+                MasterMach50<br>
+                Ceppler<br>
+            </div>
+
+            <div class="quote">
+                Hello there stranger !
+            </div>
+
+            <div class="scroll" id="scroll-icon">
+                <svg viewBox="0 0 320 512">
+                    <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                </svg>
+            </div>
+
         </div>
 
-        <div class="name-main">
-            Mathew
-        </div>
+        <div class="content-container content-container-2">
 
-        <div class="name-alternate">
-            <b>AKA</b><br>
-            Mach50<br>
-            MasterMach50<br>
-            Ceppler<br>
-        </div>
+            <div class="meet-me-title">
+                Meet me.
+            </div>
 
-        <div class="quote">
-            Hello there stranger !
-        </div>
+            <div class="sns-links">
 
-        <div class="scroll" id="scroll-icon">
-            <svg viewBox="0 0 320 512" title="angle-down">
-                <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
-            </svg>
-        </div>
+                <!-- Github -->
+                <a href="https://github.com/mastermach50">
+                    <div class="github-link sns-link-box">
+                        <img src="res/icons/github.svg" alt="github-icon sns-link-icon">
+                        <div class="sns-username">
+                            MasterMach50
+                        </div>
+                    </div>
+                </a>
 
+                <!-- Discord -->
+                <a href="https://discordapp.com/users/703194877483155546">
+                    <div class="discord-link sns-link-box">
+                        <img src="res/icons/discord.svg" alt="discord-icon sns-link-icon">
+                        <div class="sns-username">
+                            @mach50
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Youtube -->
+                <a href="https://www.youtube.com/@mastermach50">
+                    <div class="youtube-link sns-link-box">
+                        <img src="res/icons/youtube.svg" alt="youtube-icon sns-link-icon">
+                        <div class="sns-username">
+                            @mastermach50
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Matrix -->
+                <a href="https://matrix.to/#/@mach50:matrix.im">
+                    <div class="matrix-link sns-link-box">
+                        <img src="res/icons/matrix.svg" alt="matrix-icon sns-link-icon">
+                        <div class="sns-username">
+                            @mach50:matrix.im
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        
+        <div class="hosted-with-love">
+            Hosted with ❤️ on <a href="http://github.com/mastermach50/mastermach50.github.io">Github</a>
+        </div>
     </div>
-
-    <div class="content-section-2">
-        <div class="coming-soon">Coming Soon...</div>
-    </div>
-    
-    <div class="hosted-with-love">
-        Hosted with ❤️ on Github
-    </div>
-
-    <!-- TODO -->
     <script>
         document.getElementById("scroll-icon").addEventListener("click", function() {
-            let to_scroll = document.body.scrollHeight - 32;
-            console.log(document.body.scrollHeight);
-            console.log(to_scroll);
-            window.scrollTo(0, to_scroll);
+            window.scrollTo(0, window.innerHeight);
         })
     </script>
 </body>

@@ -1,39 +1,34 @@
-* {
-    --background-color-primary: #101010;
-    --background-color-secondary: #232323;
-    --background-color-tertiary: #4d4d4d;
-    --text-color-light: #ffffff;
-    --text-color-regular: #c7c7c7;
-    --text-color-dark: #606060;
+@import url(/res/stylesheets/colors.css);
+@import url(/res/stylesheets/animations.css);
+@import url(/res/stylesheets/fonts.css);
 
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
-
-html { scroll-behavior: smooth; }
-
-@font-face {
-    font-family: "JetBrains Mono";
-    src: url(res/fonts/jetbrains_mono_regular.woff2);
-}
-
-@font-face {
-    font-family: "Lato";
-    src: url(res/fonts/lato.ttf);
-}
-
-@font-face {
-    font-family: "Satisfy";
-    src: url(res/fonts/satisfy_regular.ttf);
-}
-
 
 body {
     margin: 0;
-    background-color: var(--background-color-primary);
+    background-color: var(--background-color-0);
     color: var(--text-color-regular);
+}
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+.content-container {
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+/* First Page Start */
+.content-container-1 {
+    text-align: center;
 }
 
 .banner {
-    height: 40%;
+    height: 40vmin;
 
     background-image: url(res/images/green_night_valley.jpg);
     background-position: center;
@@ -44,19 +39,12 @@ body {
 }
 
 .banner .avatar img {
-    height: 20vw;
-    max-height: 10rem;
+    height: 20vmin;
 
     margin-bottom: 1rem;
 
-    border: 0.3rem solid var(--background-color-tertiary);
+    border: 0.3rem solid var(--background-color-3);
     border-radius: 100%;
-}
-
-.content-section-1 {
-    text-align: center;
-
-    height: 100vh;
 }
 
 .name-main {
@@ -80,10 +68,10 @@ body {
 
     width: fit-content;
     padding: 1rem 7vw;
-    border: 0.3rem solid var(--background-color-tertiary);
+    border: 0.3rem solid var(--background-color-2);
     border-radius: 1rem;
 
-    background-color: var(--background-color-secondary);
+    background-color: var(--background-color-1);
 }
 
 .name-alternate b {
@@ -102,53 +90,129 @@ body {
 .scroll svg {
     height: 3.4rem;
     stroke: currentColor;
-    fill: var(--text-color-regular);
+    fill: var(--background-color-2);
 }
 
 .scroll {
     margin: auto;
-    margin-top: 1.5rem;
-	width: 3rem;
-	height: 3rem;
-	border: 0.2rem solid var(--text-color-dark);
-	border-radius: 100%;
-	position: relative;
-	animation: down 2s infinite;
+    margin-top: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border: 0.2rem solid var(--background-color-1);
+    border-radius: 100%;
+    position: relative;
+    animation: press-down 2s infinite;
+}
+/* First Page End */
+
+
+/* Second Page Start */
+.content-container-2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
-@keyframes down {
-	0% {
-		transform: translate(0);
-	}
-	20% {
-		transform: translateY(15px);
-	}
-	40% {
-		transform: translate(0);
-	}
-}
-
-.content-section-2 {
+.meet-me-title {
     height: 100vh;
 
-    background-color: var(--background-color-secondary);
+    z-index: 0;
+    position: absolute;
+
+    font-family: "Rubik";
+    font-weight: 700;
+
+    color: var(--background-color-1);
+
+    font-size: 20rem;
+    line-height: 20rem;
+
+    overflow: hidden
 }
 
+.sns-links {
+    z-index: 1;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+}
+
+.sns-link-box {
+    width: 20rem;
+
+    margin-top: 1rem;
+
+    display: flex;
+
+    padding: 1rem;
+
+    border: 0.3rem solid var(--background-color-2);
+    border-radius: 2rem;
+
+    background-color: var(--background-color-1);
+}
+
+.sns-link-box:hover {
+    border-color: var(--background-color-4);
+}
+
+.sns-links img {
+    height: 2rem;
+    width: 2rem;
+
+    z-index: 10;
+}
+
+.github-link {
+    background-color: var(--github-dark-primary);
+}
+
+.discord-link {
+    background-color: var(--discord-dark-primary);
+}
+
+.youtube-link {
+    background-color: var(--youtube-dark-primary);
+}
+
+.matrix-link {
+    background-color: var(--element-dark-primary);
+}
+
+.sns-links .sns-username {
+    z-index: 20;
+
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: "Rubik";
+    color: var(--text-color-light);
+}
+/* Second Page End */
+
+
+/* Footer Start */
 .hosted-with-love {
     height: 2rem;
+
+    background-color: black;
 
     text-align: center;
     vertical-align: middle;
     line-height: 2rem;
 
+    scroll-snap-align: end;
+
     font-family: 'Consolas';
 }
 
-/* TODO */
-.coming-soon {
-    color: var(--text-color-dark);
-    font-family: "Roboto";
-    font-size: 5rem;
-    text-align: center;
-    padding-top: 45vh;
+.hosted-with-love a {
+    text-decoration: underline;
 }
+
+.hosted-with-love a:hover {
+    color: #ffffff;
+}
+/* Footer End */
