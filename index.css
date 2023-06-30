@@ -60,6 +60,8 @@ a {
 .name-main {
     padding-top: 1rem;
 
+    animation: fadein 0.5s;
+
     color: var(--text-color-light);
     font-family: "Lato";
     font-size: 2rem;
@@ -71,6 +73,8 @@ a {
     margin-right: auto;
 
     margin-top: 1rem;
+
+    animation: fadein 0.5s;
 
     font-family: "JetBrains Mono";
     font-size: 1.1rem;
@@ -92,6 +96,8 @@ a {
 
 .quote {
     margin-top: 1.5rem;
+
+    animation: fadein 0.5s;
 
     font-size: 2rem;
     font-family: "Satisfy";
@@ -156,13 +162,15 @@ a {
 
     margin-top: auto;
     margin-bottom: auto;
-    display: block;
 }
 
 .sns-link-box {
     width: 20rem;
 
     margin-top: 1rem;
+
+    margin-left: auto;
+    margin-right: auto;
 
     display: flex;
 
@@ -176,6 +184,9 @@ a {
 
 .sns-link-box:hover {
     border-color: var(--background-color-4);
+
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .sns-links img {
@@ -185,19 +196,19 @@ a {
     z-index: 10;
 }
 
-.github-link {
+.github-link-box {
     background-color: var(--github-dark-primary);
 }
 
-.discord-link {
+.discord-link-box {
     background-color: var(--discord-dark-primary);
 }
 
-.youtube-link {
+.youtube-link-box {
     background-color: var(--youtube-dark-primary);
 }
 
-.matrix-link {
+.matrix-link-box {
     background-color: var(--element-dark-primary);
 }
 
