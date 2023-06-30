@@ -144,10 +144,10 @@ a {
 
 @media (hover:none) {
     .meet-me-title {
-        font-size: 10rem;
-        line-height: 7rem;
+        font-size: 8rem;
+        line-height: 6rem;
 
-        margin-top: 1rem;
+        margin-top: 2.5rem;
     }
 }
 
