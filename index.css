@@ -28,7 +28,7 @@ a {
 }
 
 .banner {
-    height: 40vmin;
+    height: 40vh;
 
     background-image: url(res/images/green_night_valley.jpg);
     background-position: center;
@@ -39,12 +39,22 @@ a {
 }
 
 .banner .avatar img {
-    height: 20vmin;
+    height: 20vh;
 
     margin-bottom: 1rem;
 
     border: 0.3rem solid var(--background-color-3);
     border-radius: 100%;
+}
+
+@media (hover:none) {
+    .banner {
+        background-size: cover;
+    }
+
+    .banner .avatar img {
+        height: 30vw;
+    }
 }
 
 .name-main {
@@ -115,9 +125,11 @@ a {
 
 .meet-me-title {
     height: 100vh;
+    width: 100%;
+
+    position: absolute;
 
     z-index: 0;
-    position: absolute;
 
     font-family: "Rubik";
     font-weight: 700;
@@ -128,6 +140,15 @@ a {
     line-height: 20rem;
 
     overflow: hidden
+}
+
+@media (hover:none) {
+    .meet-me-title {
+        font-size: 10rem;
+        line-height: 7rem;
+
+        margin-top: 1rem;
+    }
 }
 
 .sns-links {
