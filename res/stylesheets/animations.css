@@ -1,16 +1,16 @@
 @keyframes press-down {
-    0% {
-        transform: translate(0);
-    }
-    20% {
-        transform: translateY(15px);
-    }
-    40% {
-        transform: translate(0);
-    }
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	from { opacity: 0; }
+	to   { opacity: 1; }
 }

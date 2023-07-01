@@ -1,19 +1,19 @@
 @font-face {
-    font-family: "JetBrains Mono";
-    src: url(../fonts/jetbrains_mono_regular.woff2);
+	font-family: "JetBrains Mono";
+	src: url(../fonts/jetbrains_mono_regular.woff2);
 }
 
 @font-face {
-    font-family: "Lato";
-    src: url(../fonts/lato.ttf);
+	font-family: "Lato";
+	src: url(../fonts/lato.ttf);
 }
 
 @font-face {
-    font-family: "Satisfy";
-    src: url(../fonts/satisfy_regular.ttf);
+	font-family: "Satisfy";
+	src: url(../fonts/satisfy_regular.ttf);
 }
 
 @font-face {
-    font-family: "Rubik";
-    src: url(../fonts/rubik_regular.ttf);
+	font-family: "Rubik";
+	src: url(../fonts/rubik_regular.ttf);
 }

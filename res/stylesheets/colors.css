@@ -1,27 +1,27 @@
 * {
-    /* Backgrounds */
-    --background-color-0: #111111;
-    --background-color-1: #222222;
-    --background-color-2: #555555;
-    --background-color-3: #777777;
-    --background-color-4: #dddddd;
+	/* Backgrounds */
+	--background-color-0: #111111;
+	--background-color-1: #222222;
+	--background-color-2: #555555;
+	--background-color-3: #777777;
+	--background-color-4: #dddddd;
 
-    /* Text */
-    --text-color-light: #ffffff;
-    --text-color-regular: #bbbbbb;
-    --text-color-dark: #888888;
+	/* Text */
+	--text-color-light: #ffffff;
+	--text-color-regular: #bbbbbb;
+	--text-color-dark: #888888;
 
-    /* Websites */
-    --github-dark-primary: #0d1117;
-    --github-dark-secondary: #30363d;
+	/* Websites */
+	--github-dark-primary: #0d1117;
+	--github-dark-secondary: #30363d;
 
-    --discord-dark-primary: #2e3035;
-    --discord-dark-secondary: #1e1f22;
+	--discord-dark-primary: #2e3035;
+	--discord-dark-secondary: #1e1f22;
 
-    --youtube-dark-primary: #ff0000;
-    --youtube-dark-secondary: #0f0f0f;
+	--youtube-dark-primary: #ff0000;
+	--youtube-dark-secondary: #0f0f0f;
 
-    --element-dark-primary: #0dbd8b;
-    --element-dark-secondary: #15191e;
+	--element-dark-primary: #0dbd8b;
+	--element-dark-secondary: #15191e;
 
 }
