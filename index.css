@@ -45,6 +45,8 @@ a {
 
 	border: 0.3rem solid var(--background-color-3);
 	border-radius: 100%;
+
+	background-color: #ffffff;
 }
 
 @media (hover:none) {
