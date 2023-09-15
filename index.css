@@ -191,6 +191,7 @@ em {
 	.bio-banner {
 		position: absolute;
 		width: 75vw;
+		border: none;
 	}
 	
 	.bio-banner img {
