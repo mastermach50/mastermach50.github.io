@@ -11,19 +11,54 @@ body {
 	margin: 0;
 	background-color: var(--background-color-0);
 	color: var(--text-color-regular);
+	font-family: "Roboto";
 }
+
 a {
 	color: unset;
 	text-decoration: none;
 }
 
-.content-container {
+em {
+	color: var(--emphasis);
+	display: contents;
+}
+
+.page {
 	height: 100vh;
 	scroll-snap-align: center;
 }
 
-/* First Page Start */
-.content-container-1 {
+.big-bg-text {
+	height: 100vh;
+	width: 100vw;
+
+	position: absolute;
+
+	z-index: 0;
+
+	margin: 2rem 2rem 2rem 2rem;
+
+	font-family: "Rubik";
+	font-weight: 1000;
+
+	color: var(--background-color-1);
+
+	font-size: 25rem;
+	line-height: 20rem;
+
+	overflow: hidden
+}
+
+@media (pointer:none), (pointer:coarse) {
+	.big-bg-text {
+		font-size: 10rem;
+		line-height: 8rem;
+	}
+}
+
+/* Page 1 Start */
+.page-1 {
 	text-align: center;
 }
 
@@ -39,9 +74,10 @@ a {
 }
 
 .banner .avatar img {
+
 	height: 20vh;
 
-	margin-bottom: 1rem;
+	margin-bottom: 1.3rem;
 
 	border: 0.3rem solid var(--background-color-3);
 	border-radius: 100%;
@@ -49,41 +85,28 @@ a {
 	background-color: #ffffff;
 }
 
-@media (hover:none) {
-	.banner {
-		background-size: cover;
-	}
-
-	.banner .avatar img {
-		height: 30vw;
-	}
-}
-
 .name-main {
-	padding-top: 1rem;
+	margin: 1rem;
 
 	animation: fadein 0.5s;
 
 	color: var(--text-color-light);
 	font-family: "Lato";
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
 
 .name-alternate {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 
-	margin-top: 1rem;
-
-	animation: fadein 0.5s;
+	animation: fadein 0.7s;
 
 	font-family: "JetBrains Mono";
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	align-content: center;
 
 	width: fit-content;
-	padding: 1rem 7vw;
+	padding: 1rem 10vw;
 	border: 0.3rem solid var(--background-color-2);
 	border-radius: 1rem;
 
@@ -92,16 +115,15 @@ a {
 
 .name-alternate b {
 	color: var(--text-color-dark);
-	font-family: "Roboto";
-	font-size: 0.75rem;
+	font-size: 1rem;
 }
 
 .quote {
-	margin-top: 1.5rem;
+	margin: 2rem;
 
 	animation: fadein 0.5s;
 
-	font-size: 2rem;
+	font-size: 2.2rem;
 	font-family: "Satisfy";
 }
 
@@ -113,7 +135,6 @@ a {
 
 .scroll {
 	margin: auto;
-	margin-top: 1rem;
 	width: 3rem;
 	height: 3rem;
 	border: 0.2rem solid var(--background-color-1);
@@ -121,52 +142,83 @@ a {
 	position: relative;
 	animation: press-down 2s infinite;
 }
-/* First Page End */
+/* Page 1 End */
 
+/* Page 2 Start */
+.page-2 {
+	margin: 3rem;
+	display: flex;
+	justify-content: space-around;
+}
 
-/* Second Page Start */
-.content-container-2 {
+.bio {
+	display: flex;
+	align-items: center;
+
+	z-index: 1;
+}
+
+.bio-banner {
+	height: 50vh;
+	width: 40vw;
+
+	display: flex;
+	align-items: center;
+
+	padding-right: 2rem;
+	border-right: solid 2px var(--background-color-3) ;
+}
+
+.bio-banner img {
+	width: inherit;
+}
+
+.bio-text {
+	height: 50vh;
+	width: 40vw;
+
+	display: flex;
+	align-items: center;
+
+	font-size: 1.5rem;
+	line-height: 3rem;
+
+	padding-left: 2rem;
+	border-left: solid 2px var(--background-color-3) ;
+}
+
+@media (pointer:none), (pointer:coarse) {
+	.bio-banner {
+		position: absolute;
+		width: 75vw;
+	}
+	
+	.bio-banner img {
+		opacity: 0.2;
+	}
+
+	.bio-text {
+		width: 75vw;
+
+	}
+}
+/* Page 2 End */
+
+/* Page 3 Start */
+.page-3 {
 	display: flex;
 	justify-content: center;
 	position: relative;
 }
 
-.meet-me-title {
-	height: 100vh;
-	width: 100%;
-
-	position: absolute;
-
-	z-index: 0;
-
-	font-family: "Rubik";
-	font-weight: 700;
-
-	color: var(--background-color-1);
-
-	font-size: 20rem;
-	line-height: 20rem;
-
-	overflow: hidden
-}
-
-@media (hover:none) {
-	.meet-me-title {
-		font-size: 8rem;
-		line-height: 6rem;
-
-		margin-top: 2.5rem;
-	}
-}
-
-.sns-links {
+.external-links {
 	z-index: 1;
 
 	margin-top: auto;
 	margin-bottom: auto;
 }
 
-.sns-link-box {
+.external-link-box {
 	width: 20rem;
 
 	margin-top: 1rem;
@@ -186,7 +238,7 @@ a {
 	background-color: var(--background-color-1);
 }
 
-.sns-link-box:hover {
+.external-link-box:hover {
 	border-color: var(--background-color-4);
 
 	padding-left: 3rem;
@@ -195,7 +247,7 @@ a {
 	transition: 0.2s;
 }
 
-.sns-links img {
+.external-links img {
 	height: 2rem;
 	width: 2rem;
 
@@ -218,7 +270,7 @@ a {
 	background-color: var(--element-dark-primary);
 }
 
-.sns-links .sns-username {
+.external-links .external-username {
 	z-index: 20;
 
 	align-self: center;
@@ -228,11 +280,11 @@ a {
 	font-family: "Rubik";
 	color: var(--text-color-light);
 }
-/* Second Page End */
+/* Page 3 End */
 
 
 /* Footer Start */
-.hosted-with-love {
+.footer {
 	height: 2rem;
 
 	background-color: black;
@@ -246,11 +298,11 @@ a {
 	font-family: 'Consolas';
 }
 
-.hosted-with-love a {
+.footer a {
 	text-decoration: underline;
 }
 
-.hosted-with-love a:hover {
+.footer a:hover {
 	color: #ffffff;
 }
 /* Footer End */
