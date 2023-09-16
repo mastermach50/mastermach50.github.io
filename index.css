@@ -24,6 +24,15 @@ em {
 	display: contents;
 }
 
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .page {
 	height: 100vh;
 	scroll-snap-align: center;
@@ -36,8 +45,6 @@ em {
 	position: absolute;
 
 	z-index: 0;
-
-	margin: 2rem 2rem 2rem 2rem;
 
 	font-family: "Rubik";
 	font-weight: 1000;
@@ -305,5 +312,6 @@ em {
 
 .footer a:hover {
 	color: #ffffff;
+	font-weight: 800;
 }
 /* Footer End */
